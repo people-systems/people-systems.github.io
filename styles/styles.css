@@ -211,6 +211,7 @@ a {
         width: 50%;
         padding: 10px;
         order: 2;
+        overflow: hidden;
     }
 
     .right-sidebar .next {
