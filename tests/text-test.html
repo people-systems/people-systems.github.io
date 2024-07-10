@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Typing Effect</title>
+    <style>
+        #output {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        function typeText(element, text, delay) {
+            let index = 0;
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text[index];
+                    index++;
+                    setTimeout(type, delay);
+                }
+            }
+            type();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const outputElement = document.getElementById("output");
+            const textToType = "This is an example text that will appear one character at a time.";
+            const typingDelay = 50; // Delay in milliseconds
+
+            typeText(outputElement, textToType, typingDelay);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>P.E.O.P.L.E.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name='keywords' content="P.E.O.P.L.E., P.E.O.P.L.E., P.E.O.P.L.E." />
+    <meta name="description" content="P.E.O.P.L.E." />
+    <link rel="shortcut icon" href="/Images/favicon.ico" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link rel='stylesheet' href='./2.css'>
+    <script type="text/javascript">
+        $.fn.pause = function(duration) {
+            $(this).animate({ dummy: 1 }, duration);
+            return this;
+        };
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        $(window).load(function() {
+            const images = [
+                "./rand-assets/00012-932950646.png",
+                "./rand-assets/00021-3041450746.png",
+                "./rand-assets/00036-3312573952.png",
+                "./rand-assets/00054-1080692964.png",
+                "./rand-assets/00057-3134555728.png",
+                "./rand-assets/00060-61971755.png",
+                "./rand-assets/00073-3681095762.png",
+                "./rand-assets/00075-52122073.png",
+                "./rand-assets/00077-1429038520.png",
+                "./rand-assets/00077-3173951128.png",
+                "./rand-assets/00078-937934046.png",
+                "./rand-assets/00088-1804768692.png",
+                "./rand-assets/00097-3465624564.png",
+                "./rand-assets/00098-1550365215.png",
+                "./rand-assets/00104-2868124872.png",
+                "./rand-assets/00118-3454724003.png",
+                "./rand-assets/00127-725641342.png",
+                "./rand-assets/00128-1462985512.png",
+                "./rand-assets/00129-78694219.png",
+                "./rand-assets/00136-1462985520.png",
+                "./rand-assets/00140-2681674565.png",
+                "./rand-assets/00158-1298885643.png",
+                "./rand-assets/00162-213144951.png",
+                "./rand-assets/00171-1768681439.png",
+                "./rand-assets/00175-1642280199.png",
+                "./rand-assets/00177-1482351417.png",
+                "./rand-assets/00179-3637987955.png",
+                "./rand-assets/00181-2830740005.png",
+                "./rand-assets/00184-2830740008.png",
+                "./rand-assets/00186-2199319140.png",
+                "./rand-assets/00188-2199319142.png",
+                "./rand-assets/00189-2199319143.png",
+                "./rand-assets/00190-2199319144.png",
+                "./rand-assets/00191-2199319145.png",
+                "./rand-assets/00192-2199319146.png",
+                "./rand-assets/00193-2199319147.png",
+                "./rand-assets/00194-2199319148.png",
+                "./rand-assets/00195-1012522995.png",
+                "./rand-assets/00196-437906728.png",
+                "./rand-assets/00201-3730876086.png",
+                "./rand-assets/00202-2120192190.png",
+                "./rand-assets/00215-3219457293.png",
+                "./rand-assets/00217-427691943.png",
+                "./rand-assets/00223-3643138325.png",
+                "./rand-assets/00243-50023870.png",
+                "./rand-assets/00246-296038423.png",
+                "./rand-assets/00288-3788376475.png",
+                "./rand-assets/00314-2217554929.png",
+                "./rand-assets/00315-2987906326.png",
+                "./rand-assets/00317-1986293003.png"
+            ];
+
+            shuffle(images);
+
+            const imageList = $("#imageList");
+            imageList.empty();
+
+            const selectedImages = images.slice(0, 5);
+            selectedImages.forEach(function(src) {
+                imageList.append('<li><img src="' + src + '" alt="Img" class="small-img" /></li>');
+            });
+
+            $(".container img").each(function() {
+                $(this).slideDown("slow");
+                $(this).css("visibility", 'visible');
+                $(this).css("border", '1px solid #4F4F4F');
+            });
+        });
+    </script>
+    <style>
+        body {
+            background-color: white;
+        }
+        .container {
+            display: block;
+        }
+        .container img {
+            display: block;
+            margin: 10px auto;
+        }
+        .small-img {
+            width: 50%; /* Adjust this percentage to change the image size */
+            height: auto; /* Maintain aspect ratio */
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+        li {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        P.E.O.P.L.E.
+    </div>
+    <div class="container">
+        <ul id="imageList"></ul>
+    </div>
+    <div style='clear:both;'></div>
+</body>
+</html>
