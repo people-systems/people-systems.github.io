@@ -23,7 +23,7 @@ function typeText(element, text, delay) {
 }
 
 $(document).ready(function() {
-    const typingDelay = 120; // Delay in milliseconds
+    const typingDelay = 1; // Delay in milliseconds
     
     shuffle(images);
     const imageList = $("#imageList");
