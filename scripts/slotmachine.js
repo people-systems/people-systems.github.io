@@ -36,5 +36,9 @@ $(document).ready(function() {
         const captionElement = $('<div></div>').addClass('captions');
         listItem.append(imgElement).append(captionElement);
         imageList.append(listItem);
+        
+        if (index < selectedImages.length) {
+            typeText(captionElement[0], "hello", typingDelay);
+        }
     });
 });
