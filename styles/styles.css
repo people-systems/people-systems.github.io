@@ -217,6 +217,7 @@ a {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    border-bottom: 2px solid #333;
 }
 .job-title {
     margin: 20px;
