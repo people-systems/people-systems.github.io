@@ -110,6 +110,13 @@ body {
     display: flex;
     flex-direction: column;
     pointer-events: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    pointer-events: none;
+}
+
+.right-sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .right-sidebar ul {
