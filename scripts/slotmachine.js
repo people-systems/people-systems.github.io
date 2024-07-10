@@ -38,7 +38,7 @@ $(document).ready(function() {
         imageList.append(listItem);
         
         if (index < selectedImages.length) {
-            typeText(captionElement[0], "hello", typingDelay);
+            typeText(captionElement[0], "    ", typingDelay);
         }
     });
 });
