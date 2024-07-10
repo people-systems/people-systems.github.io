@@ -195,6 +195,7 @@ a {
     line-height: 1.6;
     margin: 20px;
     width: 50%;
+    padding-left: 25px;
 }
 
 .resume h1, h2, h3 {
