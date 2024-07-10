@@ -36,20 +36,24 @@ body {
 .background::-webkit-scrollbar {
     display: none;
 }
+
 .background img {
     display: block;
     width: 100%;
     height: auto;
     display: block;
 }
+
 .background ul {
     list-style-type: none;
     padding: 0;
 }
+
 .background li {
     margin: 0;
     text-align: center;
 }
+
 .captions {
     font-size: 28px;
     white-space: pre-wrap;
@@ -168,6 +172,7 @@ a {
     margin-bottom: 10px;
     border-bottom: 2px solid #333;
 }
+
 .job-title {
     margin: 20px;
     font-weight: bold;
