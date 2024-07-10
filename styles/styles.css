@@ -5,13 +5,6 @@
     font-weight: bold;
 }
 
-@font-face {
-    font-family: 'Helvetica Neue Thin';
-    src: local('Helvetica Neue Thin'), local('HelveticaNeue-Thin'),
-         url('./fonts/HelveticaNeue-Thin.woff') format('woff');
-    font-weight: 200;
-}
-
 body {
     margin: 0;
     font-family: 'Helvetica Neue Bold';
