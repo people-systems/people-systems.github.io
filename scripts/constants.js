@@ -30,3 +30,16 @@ const images = [
     "./assets/img/20.png",
     "./assets/img/8.png",
 ]
+
+const videos = [
+    "./assets/vid/1.mp4",
+    "./assets/vid/2.mp4",
+    "./assets/vid/3.mp4",
+    "./assets/vid/4.mp4",
+    "./assets/vid/5.mp4",
+    "./assets/vid/6.mp4",
+    "./assets/vid/7.mp4",
+    "./assets/vid/8.mp4",
+    "./assets/vid/9.mp4",
+    "./assets/vid/10.mp4",
+]
