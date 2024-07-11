@@ -201,6 +201,12 @@ a {
     margin-bottom: 10px;
 }
 
+.plus-sign {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
