@@ -23,13 +23,13 @@ function typeText(element, text, delay) {
 }
 
 $(document).ready(function() {
-    const typingDelay = 1; // Delay in milliseconds
+    const typingDelay = 10;
     
     shuffle(images);
     const imageList = $("#imageList");
     imageList.empty();
 
-    const selectedImages = images.slice(0, 10);
+    const selectedImages = images.slice(0, 30);
     selectedImages.forEach(function(src, index) {
         const listItem = $('<li></li>');
         const imgElement = $('<img>').attr('src', src).attr('alt', 'Img').addClass('small-img');
