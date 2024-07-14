@@ -29,7 +29,7 @@ $(document).ready(function() {
     const videoList = $("#videoList");
     videoList.empty();
 
-    const selectedVideos = videos.slice(0, 12);
+    const selectedVideos = videos.slice(0, 14);
     selectedVideos.forEach(function(src, index) {
         const listItem = $('<li></li>');
         const videoElement = $('<video>').attr('src', src).attr('autoplay', true).attr('muted', true).attr('loop', true).attr('playsinline', true).addClass('small-vid').css('width', '100%');

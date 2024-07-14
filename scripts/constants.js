@@ -44,4 +44,6 @@ const videos = [
     "./assets/vid/10.mp4",
     "./assets/vid/11.mp4",
     "./assets/vid/12.mp4",
+    "./assets/vid/13.mp4",
+    "./assets/vid/14.mp4",
 ]
